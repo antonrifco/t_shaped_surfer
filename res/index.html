@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google Analytics -->
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-136413741-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -38,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#subscribe">Subscribe</a>
+                        <a class="nav-link js-scroll-trigger" href="#subscribe" onclick="ga('send', 'event', 'Landing-Page', 'subscribe', 'top-button');">Subscribe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#features">Features</a>
@@ -57,7 +66,7 @@
                 <div class="col-lg-7 my-auto">
                     <div class="header-content mx-auto">
                         <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                        <a href="#subscribe" class="btn btn-outline btn-xl js-scroll-trigger">Get Early Access</a>
+                        <a href="#subscribe" class="btn btn-outline btn-xl js-scroll-trigger" onclick="ga('send', 'event', 'Landing-Page', 'subscribe', 'main-button');">Get Early Access</a>
                     </div>
                 </div>
                 <div class="col-lg-5 my-auto">
@@ -91,7 +100,7 @@
                                     <label for="inputName">Name</label>
                                 </div>
                                 <div class="form-label-group">
-                                    <input type="text" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required >
+                                    <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required >
                                     <label for="inputEmail">Email address</label>
                                 </div>
                                 <div class="form-label-group">
@@ -99,7 +108,7 @@
                                     <label for="inputPhone">Phone Number</label>
                                 </div>
 
-                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Join The List</button>
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" onclick="ga('send', 'event', 'Landing-Page', 'submit-subscribe'); return true;">Join The List</button>
                             </form>
                         </div>
                     </div>
@@ -175,7 +184,7 @@
         <div class="cta-content">
             <div class="container">
                 <h2>Stop waiting.<br>Start building.</h2>
-                <a href="#subscribe" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+                <a href="#subscribe" class="btn btn-outline btn-xl js-scroll-trigger" onclick="ga('send', 'event', 'Landing-Page', 'subscribe', 'bottom-button');">Let's Get Started!</a>
             </div>
         </div>
         <div class="overlay"></div>
