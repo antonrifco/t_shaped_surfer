@@ -1,0 +1,32 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "generic Landing page to showcase Product features ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonrifco/t_shaped_surfer.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "t-shape",
+    "product"
+  ],
+  "author": "anton.rifco@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonrifco/t_shaped_surfer/issues"
+  },
+  "homepage": "https://github.com/antonrifco/t_shaped_surfer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "google-spreadsheet": "^2.0.7",
+    "nodemailer": "^5.1.1",
+    "xoauth2": "^1.2.0"
+  }
+}
