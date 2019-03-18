@@ -104,7 +104,7 @@
                                     <label for="inputEmail">Email address</label>
                                 </div>
                                 <div class="form-label-group">
-                                    <input type="text" name="inputPhone" id="inputPhone" class="form-control" placeholder="Phone Number" >
+                                    <input type="tel" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" oninvalid="this.setCustomValidity('Please provide valid phone number')" onchange="try{setCustomValidity('')}catch(e){}" oninput="setCustomValidity(' ')" name="inputPhone" id="inputPhone" class="form-control" placeholder="Phone Number" >
                                     <label for="inputPhone">Phone Number</label>
                                 </div>
 
