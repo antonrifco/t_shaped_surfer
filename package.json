@@ -4,7 +4,11 @@
   "description": "generic Landing page to showcase Product features ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate_lambda": "claudia generate-serverless-express-proxy --express-module app",
+    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-southeast-1",
+    "update": "claudia update",
+    "release": "claudia set-version --version production",
+    "start": "ntl"
   },
   "repository": {
     "type": "git",
@@ -25,9 +29,12 @@
   "dependencies": {
     "aws-sdk": "^2.422.0",
     "body-parser": "^1.18.3",
-    "claudia": "^5.4.0",
     "express": "^4.16.4",
     "nodemailer": "^5.1.1",
     "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {
+    "claudia": "^5.4.2",
+    "ntl": "^3.2.4"
   }
 }
