@@ -11,6 +11,24 @@
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
 
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2320065204723698');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2320065204723698&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -94,7 +112,7 @@
                     <div class="card card-signin my-5">
                         <div class="card-body">
                             <h5 class="card-title text-center">Get Early Access</h5>
-                            <form class="form-signin" method="post" action="/submit">
+                            <form class="form-signin" method="post" action="/submit" onsubmit="ga('send', 'event', 'Landing-Page', 'submit-subscribe'); fbq('track', 'Contact'); return true;">
                                 <div class="form-label-group">
                                     <input type="text" name="inputName" id="inputName" class="form-control" placeholder="Name" required >
                                     <label for="inputName">Name</label>
@@ -108,7 +126,7 @@
                                     <label for="inputPhone">Phone Number</label>
                                 </div>
 
-                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" onclick="ga('send', 'event', 'Landing-Page', 'submit-subscribe'); return true;">Join The List</button>
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Join The List</button>
                             </form>
                         </div>
                     </div>
