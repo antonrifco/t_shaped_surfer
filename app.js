@@ -68,8 +68,8 @@ app.post('/submit', async(req, res) => {
             from: config.email_from,
             to: email,
             subject: config.email_subject_confirmation,
-            text: 'Thanks for subscribing',
-            html: '<p>Hi ' + name + '</p><p>Thanks for subscribing</p>'
+            text: config.email_body,
+            html: '<p>Hi ' + name + '</p><p>' + config.email_body  + '</p>'
         }
         transporter.sendMail(mailOptions, (err, result)=>{
             if(err){
@@ -78,7 +78,7 @@ app.post('/submit', async(req, res) => {
                 console.log('Successfully sending email');
             }
             let output = '<html><head><meta http-equiv="refresh" content="2;url=/#features" /></head>';
-            output += '<br/><br/><center>Thanks for subscribing. <br/><br/>';
+            output += '<br/><br/><center>' + config.email_body + '<br/><br/>';
             output += '<a href="/#features" target="_self" >Get back to homepage</a></center>';
             res.setHeader('Content-Type', 'text/html');
             res.send(output);

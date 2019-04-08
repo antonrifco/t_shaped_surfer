@@ -10,4 +10,5 @@ module.exports = {
 
     email_from: 'Startup Name <no-reply@startup.com>',
     email_subject_confirmation: '[Startup] Confirmation of subscription',
+    email_body: 'Thanks for subscribing'
 };
