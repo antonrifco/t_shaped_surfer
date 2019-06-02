@@ -45,3 +45,6 @@ npm start
 ## License
 
 MIT -- see [LICENSE](LICENSE)
+
+## Thanks To
+Creator of New Age Template: https://startbootstrap.com/themes/new-age/
