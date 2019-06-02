@@ -1,4 +1,4 @@
-# New Document
+# T-Shaped Surfer: A Landing Page template
 A generic Landing page template to describe Product ideas and prompting viewers to subscribe for Early Access.
 
 Features
