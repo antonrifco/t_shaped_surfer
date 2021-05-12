@@ -31,7 +31,7 @@
     "aws-serverless-express": "^3.3.6",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "nodemailer": "^5.1.1",
+    "nodemailer": "^6.4.16",
     "xoauth2": "^1.2.0"
   },
   "devDependencies": {
