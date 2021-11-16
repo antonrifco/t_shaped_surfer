@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/antonrifco/t_shaped_surfer#readme",
   "dependencies": {
-    "aws-sdk": "^2.437.0",
+    "aws-sdk": "^2.814.0",
     "aws-serverless-express": "^3.3.6",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
